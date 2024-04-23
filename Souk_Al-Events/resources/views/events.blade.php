@@ -106,7 +106,7 @@
                                 <h5 class="text-primary mb-3">Rs.{{$event->event_ticket_price}}</h5>
                                 @endif
                                 <a class="d-block h5 mb-2" href="{{url('events')}}/{{$event->event_slug}}">{{$event->event_name}}</a>
-                                <p><i class="fa fa-map-marker-alt text-primary me-2"></i>{{Custom::cityName($event->event_location)}}</p>
+                                <p><i class="fa fa-map-marker-alt text-primary me-2"></i>{{$event->event_address}}, {{$city->name}}</p>
                             </div>
                             <div class="d-flex border-top">
                                 <small class="flex-fill text-center border-end py-2"><i class="fa fa-users text-primary me-2"></i>{{Custom::availableSeats($event->event_id)}} Left</small>
