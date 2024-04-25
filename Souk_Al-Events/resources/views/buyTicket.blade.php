@@ -23,7 +23,7 @@
                     <p><strong>Organizer Name: </strong>{{Custom::orgName($events->event_author_id)}}</p>
                 </div>
                 <div class="col-12 mb-3">
-                    <p><strong>Price: </strong>Rs. {{$events->event_ticket_price}}</p>
+                    <p><strong>Price: </strong>{{$events->event_ticket_price}} DH</p>
                 </div>
                 <div class="col-12 mb-3">
                     <p><strong>Location: </strong>{{$events->event_address}}, {{$events->event_location}}</p>
@@ -124,8 +124,8 @@
             <div class="float-start">Total Amount: </div>
             <input type="hidden" name="buyerTicketPrice" id="buyerTicketPrice" value="{{$events->event_ticket_price}}">
             <div class="float-end">
-                <input type="hidden" name="quantity" value=""> Rs. @php $total = $events->event_ticket_price * $quantity; @endphp {{$total}}
-            </div>
+                <input type="hidden" name="quantity" value=""> @php $total = $events->event_ticket_price * $quantity; @endphp {{$total}}
+             DH</div>
             <br>
             <input type="hidden" name="totalAmount" id="totalAmount" value="{{$total}}">
         </div>
