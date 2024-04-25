@@ -56,7 +56,7 @@
 
                                     <td>{{$ticket->buyer_user_name}}</td>
                                     <td>{{$ticket->buyer_user_cnic}}</td>
-                                    <td>Rs.{{$ticket->buyer_user_ticket_price}} <br>
+                                    <td>{{$ticket->buyer_user_ticket_price}} DH<br>
                                         {{$ticket->buyer_user_payment_method}}
                                     </td>
                                     <td> @if ($ticket->buyer_user_payment_status == 'UP')
@@ -151,7 +151,7 @@
                     <div class="col-12 mb-3">
                         <div class="subscription">
                             <p><strong>Subscription:</strong><span class="bg-primary m-2 rounded" id="subscription"> </span></p>
-                            <p><strong>Price:</strong> Rs.<span id="ticketPrice"></span> </p>
+                            <p><strong>Price:</strong> DH<span id="ticketPrice"></span> </p>
                         </div>
                     </div>
                     <div class="col-12 mb-3">

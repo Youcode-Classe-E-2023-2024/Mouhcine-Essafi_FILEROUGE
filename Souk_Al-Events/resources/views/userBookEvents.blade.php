@@ -74,7 +74,7 @@
                         <span class="p-2 badge badge-success bg-success">Free</span>
                         @elseif($event->event_subscription == 'P')
                         <span class="p-2 badge badge-danger bg-danger">Paid</span>
-                       <p class="mt-2"><strong>Rs. {{$event->event_ticket_price}}</strong></p>
+                       <p class="mt-2"><strong>{{$event->event_ticket_price}} DH</strong></p>
                     @endif </td>
                     {{-- <td>{{Custom::availableSeats($event->event_id)}}</td> --}}
                     <td><span class="badge bg-primary p-2">Paid</span></td>

@@ -111,8 +111,8 @@ background: linear-gradient(to right, #ec2F4B, #009FFF); */
             </label>
           </div>
          
-            <div class="col-4"><a href="{{url('chatify')}}/{{$users->id}}" class="btn btn-info dummy-alert">Message <i class="fa fa-comment"></i></a>
-            </div>
+            {{-- <div class="col-4"><a href="{{url('chatify')}}/{{$users->id}}" class="btn btn-info dummy-alert">Message <i class="fa fa-comment"></i></a>
+            </div> --}}
             {{-- <div class="col-4"><a href="" class="btn btn-dark">Contact</a></div> --}}
         </div>
         @endif
@@ -170,7 +170,7 @@ background: linear-gradient(to right, #ec2F4B, #009FFF); */
                                     <h3 class="mb-3">{{$event->event_name}}</h3>
                                     <p>{{$event->event_description}}</p>
                                 </div>
-                                <a href="{{url('events')}}/{{$event->event_slug}}" class="btn btn-primary "><i class="fa fa-phone-alt me-2"></i>View Details</a>
+                                <a href="{{url('events')}}/{{$event->event_slug}}" class="btn btn-primary "><i class="fa me-2"></i>View Details</a>
                                 <a href="{{url('events')}}/{{$event->event_slug}}" class="btn btn-dark "><i class="fa fa-calendar-alt me-2"></i>Buy Ticket</a>
                             </div>
                         </div>

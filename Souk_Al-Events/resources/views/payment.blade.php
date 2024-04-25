@@ -82,7 +82,7 @@
                         <p><strong>Organizer Name: </strong>{{Custom::orgName($eventData->event_author_id)}}</p>
                       </div>
                     <div class="col-12 mb-3">
-                        <p><strong>Price: </strong>Rs. {{$eventData->event_ticket_price}}</p>
+                        <p><strong>Price: </strong>{{$eventData->event_ticket_price}} DH</p>
                       </div>
                     <div class="col-12 mb-3">
                       <p><strong>Location: </strong>{{$eventData->event_address}}, {{$eventData->event_location}}</p>
