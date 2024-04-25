@@ -94,7 +94,7 @@
                             <p class="mb-2"><a href="{{url('reviews')}}/{{$events->event_slug}}">Reviews ( {{$totalReviews}} )</a> Rating ( {{Custom::placeRating($events->event_id)}}<i class="fa fa-star text-warning"></i>)</p>
                         </div>
                         <div class="col-lg-12 pb-0 mb-0">
-                            <p class="card-price mb-0">Rs.{{$events->event_ticket_price}}</p>
+                            <p class="card-price mb-0">{{$events->event_ticket_price}} DH</p>
                             <hr>
                         </div>
                         <div class="col-lg-12">

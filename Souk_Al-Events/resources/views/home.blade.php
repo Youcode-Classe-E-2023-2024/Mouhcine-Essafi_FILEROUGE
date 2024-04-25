@@ -306,9 +306,9 @@
                             <div class="p-4 pb-0">
                                 <div class="d-flex justify-content-between align-items-center mb-1">
                                     @if ($event->event_subscription == 'F')
-                                    <h5 class="text-primary">Rs.0</h5>
+                                    <h5 class="text-primary">0 DH</h5>
                                     @elseif($event->event_subscription == 'P')
-                                    <h5 class="text-primary">Rs.{{$event->event_ticket_price}}</h5>
+                                    <h5 class="text-primary">{{$event->event_ticket_price}} DH</h5>
                                     @endif
 
                                     <small class="flex-fill text-end border-end py-2"><i class="fa fa-users text-primary me-2"></i>{{Custom::availableSeats($event->event_id)}} Seats Left</small>
@@ -349,9 +349,9 @@
                             </div>
                             <div class="p-4 pb-0">
                                 @if ($event->event_subscription == 'F')
-                                <h5 class="text-primary mb-3">Rs.0</h5>
+                                <h5 class="text-primary mb-3">0 DH</h5>
                                 @elseif($event->event_subscription == 'P')
-                                <h5 class="text-primary mb-3">Rs.{{$event->event_ticket_price}}</h5>
+                                <h5 class="text-primary mb-3">{{$event->event_ticket_price}} DH</h5>
                                 @endif
                                 <a class="d-block h5 mb-2" href="{{url('events')}}/{{$event->event_slug}}">{{$event->event_name}}</a>
                                 <p><i class="fa fa-map-marker-alt text-primary me-2"></i>{{Custom::cityName($event->event_location)}}</p>
@@ -385,9 +385,9 @@
                             </div>
                             <div class="p-4 pb-0">
                                 @if ($event->event_subscription == 'F')
-                                <h5 class="text-primary mb-3">Rs.0</h5>
+                                <h5 class="text-primary mb-3">0 DH</h5>
                                 @elseif($event->event_subscription == 'P')
-                                <h5 class="text-primary mb-3">Rs.{{$event->event_ticket_price}}</h5>
+                                <h5 class="text-primary mb-3">{{$event->event_ticket_price}} DH</h5>
                                 @endif
                                 <a class="d-block h5 mb-2" href="{{url('events')}}/{{$event->event_slug}}">{{$event->event_name}}</a>
                                 <p><i class="fa fa-map-marker-alt text-primary me-2"></i>{{Custom::cityName($event->event_location)}}</p>

@@ -65,7 +65,7 @@
             </div>
 
             <div class="col-md-6 col-12 mb-3 eventTicketPrice" hidden>
-                <label for="eventTicketPrice">Event Ticket Price in PKR (Rs.)</label>
+                <label for="eventTicketPrice">Event Ticket Price in PKR (DH)</label>
                 <input type="number" name="eventTicketPrice" id="eventTicketPrice" value="{{$event->event_ticket_price}}" class="form-control" placeholder="">
             </div>
 

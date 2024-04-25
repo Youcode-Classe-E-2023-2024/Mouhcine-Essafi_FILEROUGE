@@ -101,9 +101,9 @@
                             </div>
                             <div class="p-4 pb-0">
                                 @if ($event->event_subscription == 'F')
-                                <h5 class="text-primary mb-3">Rs.0</h5>
+                                <h5 class="text-primary mb-3">0 DH</h5>
                                 @elseif($event->event_subscription == 'P')
-                                <h5 class="text-primary mb-3">Rs.{{$event->event_ticket_price}}</h5>
+                                <h5 class="text-primary mb-3">{{$event->event_ticket_price}} DH</h5>
                                 @endif
                                 <a class="d-block h5 mb-2" href="{{url('events')}}/{{$event->event_slug}}">{{$event->event_name}}</a>
                                 <p><i class="fa fa-map-marker-alt text-primary me-2"></i>{{$event->event_address}}, {{$city->name}}</p>
